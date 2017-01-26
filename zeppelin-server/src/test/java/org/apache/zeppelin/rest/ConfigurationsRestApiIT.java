@@ -31,7 +31,7 @@ import java.util.Map;
 
 import static org.junit.Assert.assertTrue;
 
-public class ConfigurationsRestApiTest extends AbstractTestRestApi {
+public class ConfigurationsRestApiIT extends AbstractTestRestApi {
   Gson gson = new Gson();
 
   @BeforeClass

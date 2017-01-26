@@ -50,7 +50,7 @@ import static org.junit.Assert.*;
  *
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ZeppelinRestApiTest extends AbstractTestRestApi {
+public class ZeppelinRestApiIT extends AbstractTestRestApi {
   Gson gson = new Gson();
   AuthenticationInfo anonymous;
 

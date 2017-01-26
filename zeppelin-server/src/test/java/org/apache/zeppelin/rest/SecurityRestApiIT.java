@@ -32,7 +32,7 @@ import org.junit.rules.ErrorCollector;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class SecurityRestApiTest extends AbstractTestRestApi {
+public class SecurityRestApiIT extends AbstractTestRestApi {
   Gson gson = new Gson();
 
   @Rule

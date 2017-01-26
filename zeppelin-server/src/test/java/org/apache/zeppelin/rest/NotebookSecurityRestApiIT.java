@@ -40,7 +40,7 @@ import org.junit.Test;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class NotebookSecurityRestApiTest extends AbstractTestRestApi {
+public class NotebookSecurityRestApiIT extends AbstractTestRestApi {
 
   Gson gson = new Gson();
 

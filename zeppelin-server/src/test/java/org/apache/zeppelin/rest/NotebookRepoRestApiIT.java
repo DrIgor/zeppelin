@@ -42,7 +42,7 @@ import com.google.gson.reflect.TypeToken;
  * NotebookRepo rest api test.
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class NotebookRepoRestApiTest extends AbstractTestRestApi {
+public class NotebookRepoRestApiIT extends AbstractTestRestApi {
 
   Gson gson = new Gson();
   AuthenticationInfo anonymous;

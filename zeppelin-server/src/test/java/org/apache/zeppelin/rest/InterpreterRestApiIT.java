@@ -53,7 +53,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * Zeppelin interpreter rest api tests
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class InterpreterRestApiTest extends AbstractTestRestApi {
+public class InterpreterRestApiIT extends AbstractTestRestApi {
   Gson gson = new Gson();
   AuthenticationInfo anonymous;
 

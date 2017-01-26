@@ -44,7 +44,7 @@ import com.google.gson.Gson;
  * Test against spark cluster.
  * Spark cluster is started by CI server using testing/startSparkCluster.sh
  */
-public class ZeppelinSparkClusterTest extends AbstractTestRestApi {
+public class ZeppelinSparkClusterIT extends AbstractTestRestApi {
     Gson gson = new Gson();
     AuthenticationInfo anonymous;
 

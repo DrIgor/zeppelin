@@ -22,10 +22,7 @@ import com.google.gson.reflect.TypeToken;
 import org.apache.commons.httpclient.methods.DeleteMethod;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PutMethod;
-import org.apache.zeppelin.notebook.Note;
-import org.apache.zeppelin.server.ZeppelinServer;
 import org.apache.zeppelin.user.UserCredentials;
-import org.apache.zeppelin.utils.SecurityUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -37,8 +34,8 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-public class CredentialsRestApiTest extends AbstractTestRestApi {
-  protected static final Logger LOG = LoggerFactory.getLogger(CredentialsRestApiTest.class);
+public class CredentialsRestApiIT extends AbstractTestRestApi {
+  protected static final Logger LOG = LoggerFactory.getLogger(CredentialsRestApiIT.class);
   Gson gson = new Gson();
 
   @BeforeClass
