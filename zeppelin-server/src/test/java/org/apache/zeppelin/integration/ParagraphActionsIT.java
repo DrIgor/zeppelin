@@ -45,26 +45,16 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Before
   public void startUp() {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     driver = WebDriverManager.getWebDriver();
   }
 
   @After
   public void tearDown() {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
-
     driver.quit();
   }
 
   @Test
   public void testCreateNewButton() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
       Actions action = new Actions(driver);
@@ -133,9 +123,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testRemoveButton() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -170,9 +157,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testMoveUpAndDown() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -223,9 +207,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testDisableParagraphRunButton() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -258,9 +239,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testRunOnSelectionChange() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       String xpathToRunOnSelectionChangeCheckbox = getParagraphXPath(1) + "//ul/li/form/input[contains(@ng-checked, 'true')]";
       String xpathToDropdownMenu = getParagraphXPath(1) + "//select";
@@ -314,9 +292,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testClearOutputButton() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -346,9 +321,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testWidth() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
       waitForParagraph(1, "READY");
@@ -374,9 +346,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testTitleButton() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -445,9 +414,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testShowAndHideLineNumbers() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -493,9 +459,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testEditOnDoubleClick() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
       Actions action = new Actions(driver);
@@ -542,9 +505,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testSingleDynamicFormTextInput() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -578,9 +538,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testSingleDynamicFormSelectForm() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -617,9 +574,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testSingleDynamicFormCheckboxForm() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 
@@ -660,9 +614,6 @@ public class ParagraphActionsIT extends AbstractZeppelinIT {
 
   @Test
   public void testMultipleDynamicFormsSameType() throws Exception {
-    if (!endToEndTestEnabled()) {
-      return;
-    }
     try {
       createNewNote();
 

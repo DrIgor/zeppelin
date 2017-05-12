@@ -21,6 +21,8 @@ package org.apache.zeppelin;
 import com.google.common.base.Function;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
+import org.junit.Assume;
+import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
@@ -43,6 +45,11 @@ abstract public class AbstractZeppelinIT {
   protected static final long MAX_IMPLICIT_WAIT = 30;
   protected static final long MAX_BROWSER_TIMEOUT_SEC = 30;
   protected static final long MAX_PARAGRAPH_TIMEOUT_SEC = 60;
+
+  @BeforeClass
+  public static void checkIfEnabled() {
+    Assume.assumeTrue(endToEndTestEnabled());
+  }
 
   protected void setTextOfParagraph(int paragraphNo, String text) {
     String editorId = driver.findElement(By.xpath(getParagraphXPath(paragraphNo) + "//div[contains(@class, 'editor')]")).getAttribute("id");
